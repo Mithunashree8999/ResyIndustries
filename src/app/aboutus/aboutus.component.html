@@ -1,0 +1,42 @@
+<div  id="aboutus" fxLayout="column" fxLayoutAlign="center" style="margin-top: 5%;">
+    <div *ngIf="isMobileView; else laptopTemplate">
+        <mat-toolbar style="justify-content: center;background-color: #E6E6FA;">
+            <p class="animated-text">- ABOUT US -</p>
+            <!-- <span class="Title">- ABOUT US -</span> -->
+        </mat-toolbar>
+        <div style="margin-left: 3%;">
+            <img src="assets/images/MHE.jpg" alt="Photo of aboutus" width="300" height="300" />
+        </div>
+        <p class="aboutus" style="margin-left: 3%;"> &nbsp;&nbsp;&nbsp;&nbsp; We, service company, situated at Chinna Obulapuram, Gummuduipoondi, Tamil Nadu, offer top-notch
+            rental
+            services for all types of forklifts by offering reliability and outstanding customer services. We
+            also
+            provide Manpower Supply and AMC services. We also offer flexible and customized maintenance plans
+            for
+            the same.</p>
+      </div>
+      
+      <ng-template #laptopTemplate>
+       
+
+    <div class="flex">
+        <div style="width: 40%;
+    margin-left: 13%;">
+            <mat-toolbar style="justify-content: center;background-color: #E6E6FA;">
+                <p class="animated-text">- ABOUT US -</p>
+                <!-- <span class="Title">- ABOUT US -</span> -->
+            </mat-toolbar>
+            <p class="aboutus"> &nbsp;&nbsp;&nbsp;&nbsp; We, service company, situated at Chinna Obulapuram, Gummuduipoondi, Tamil Nadu, offer top-notch
+                rental
+                services for all types of forklifts by offering reliability and outstanding customer services. We
+                also
+                provide Manpower Supply and AMC services. We also offer flexible and customized maintenance plans
+                for
+                the same.</p>
+        </div>
+        <div style="margin-left: 10%;">
+            <img src="assets/images/MHE.jpg" alt="Photo of aboutus" width="400" height="300" />
+        </div>
+    </div>
+</ng-template>
+</div>

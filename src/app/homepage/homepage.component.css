@@ -1,0 +1,219 @@
+.title {
+  padding-left: 3%;
+  margin-top: 5%;
+  color: #062549;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.button {
+  color: #73a730 !important;
+  font-size: medium;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 26px;
+  /* color: floralwhite; */
+  font-weight: 600;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background: #EFE7EB;
+  background: linear-gradient(to right, #EFE7EB 0%, #65B3BD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+
+.homepage-exam {
+  width: 100%;
+  margin-top: 3%;
+  background-image: url('/assets/images/bimg.jpg');
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.mobile-design {
+  margin-top: 15%;
+  background-image: url(/assets/images/bimg.jpg);
+  font-size: 14px;
+  height: 17em;
+  padding: 20px;
+  /* text-align: center; */
+  width: 55em;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: #73a730;
+  font-size: 24px;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  place-self: baseline;
+  background-color: rgb(255 255 255);
+}
+
+/* Image */
+.image-container img {
+  /* position: absolute; */
+  margin-top: 13%;
+  width: 75%;
+  height: 75%;
+  animation: moveLeftToRight 5s linear infinite;
+}
+
+/* Define the keyframes for animation */
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-100%);
+    /* Start offscreen to the left */
+  }
+
+  100% {
+    transform: translateX(100%);
+    /* Move offscreen to the right */
+  }
+}
+
+.image-container_right {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Image */
+.image-container_right img {
+  /* position: absolute; */
+  margin-top: 13%;
+  width: 75%;
+  height: 75%;
+  animation: moveRightToLeft 5s linear infinite;
+}
+
+/* Define the keyframes for animation */
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100%);
+    /* Start at the right (offscreen) */
+  }
+
+  100% {
+    transform: translateX(-100%);
+    /* End at the left (offscreen) */
+  }
+}
+
+/* Title animation */
+
+
+.animated-text {
+  padding-left: 3%;
+  margin-top: 5%;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right bottom, #f4811f, #d59200, #b39e00, #90a71c, #6aac3d, #73a730, #7ca223, #849c15, #b48400, #db621a, #f13350, #eb038d);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textBackgroundAnimation 4s ease infinite;
+}
+
+/* Keyframes for the animated background inside the text */
+@keyframes textBackgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Additional content */
+.content {
+  padding: 20px;
+  font-size: 18px;
+}
+
+/* text animation */
+
+.jumping-text {
+  position: relative;
+  font-size: 2rem;
+  /* Adjust as needed */
+  transition: transform 1s ease-in-out;
+  /* Control the duration and timing */
+}
+
+.jump {
+  animation: jump 1s forwards;
+  /* Call the jump animation */
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(-100%);
+    /* Start from above */
+  }
+
+  50% {
+    transform: translateY(50px);
+    /* Jump down */
+  }
+
+  100% {
+    transform: translateY(0);
+    /* End at the original position */
+  }
+}
+
+@media (min-width:320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+}
+
+@media only screen and (min-width:320px) and (max-width: 600px) {
+  /* .homepage-exam{
+      width: 80%;
+      margin-top: 3%;background-image: url('/assets/images/bimg.jpg');
+    } */
+}
+
+@media (min-width:600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+
+@media (min-width:801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (min-width:1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+
+@media (min-width:1281px) {
+  /* hi-res laptops and desktops */
+}

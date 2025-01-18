@@ -1,0 +1,136 @@
+<div id="mhe" fxFlex="column" fxFlexAlign="center" style="margin-top: 5%;">
+    <div>
+        <mat-toolbar class="toolbar" style="justify-content: center;background-color: #E6E6FA;">
+            <span class="animated-text">- MHE Rental Services -</span>
+            <!-- <span class="Title">- MHE Rental Services -</span> -->
+        </mat-toolbar>
+    </div>
+    <!-- [ngClass]="isMobileView ? 'column-layout' : 'row-layout'" -->
+    <div class="flex" >
+        <div class="card-container">
+            <mat-card class="expandable-card" (mouseenter)="isHovered1 = true" (mouseleave)="isHovered1 = false">
+                <mat-card-header>
+                    <mat-card-title class="card-title">{{ forklift.title }}</mat-card-title>
+                    <mat-card-subtitle><img src="assets/images/32tonforklift.jpg" width="270" height="175"/></mat-card-subtitle>
+                </mat-card-header>
+
+                <!-- Main content before expanding -->
+                <mat-card-content>
+                    <p *ngIf="!isHovered1"></p>
+
+                    <!-- Expanded content when hovered -->
+                    <div *ngIf="isHovered1" @fadeAnimation>
+                        <!-- <img mat-card-image [src]="item.image" alt="{{ item.title }}" /> -->
+                        <p class="card-descrition">{{ forklift.description }}</p>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+        <div class="card-container">
+            <mat-card class="expandable-card" (mouseenter)="isHovered2 = true" (mouseleave)="isHovered2 = false">
+                <mat-card-header>
+                    <mat-card-title class="card-title">{{ reachtruck.title }}</mat-card-title>
+                    <mat-card-subtitle><img src="assets/images/reachtruckmhe.jpg" width="270" height="175"/></mat-card-subtitle>
+                </mat-card-header>
+
+                <!-- Main content before expanding -->
+                <mat-card-content>
+                    <p *ngIf="!isHovered2"></p>
+
+                    <!-- Expanded content when hovered -->
+                    <div *ngIf="isHovered2" @fadeAnimation>
+                        <!-- <img mat-card-image [src]="item.image" alt="{{ item.title }}" /> -->
+                        <p>{{ reachtruck.description }}</p>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+        <div class="card-container">
+            <mat-card class="expandable-card" (mouseenter)="isHovered3 = true" (mouseleave)="isHovered3 = false">
+                <mat-card-header>
+                    <mat-card-title class="card-title">{{ handtrolley.title }}</mat-card-title>
+                    <mat-card-subtitle><img src="assets/images/HandTrolley.jpg" width="270" height="175"/></mat-card-subtitle>
+                </mat-card-header>
+
+                <!-- Main content before expanding -->
+                <mat-card-content>
+                    <p *ngIf="!isHovered3"></p>
+
+                    <!-- Expanded content when hovered -->
+                    <div *ngIf="isHovered3" @fadeAnimation>
+                        <!-- <img mat-card-image [src]="item.image" alt="{{ item.title }}" /> -->
+                        <p>{{ handtrolley.description }}</p>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+        <div class="card-container">
+            <mat-card class="expandable-card" (mouseenter)="isHovered4 = true" (mouseleave)="isHovered4 = false">
+                <mat-card-header>
+                    <mat-card-title class="card-title">{{ hydracrane.title }}</mat-card-title>
+                    <mat-card-subtitle><img src="assets/images/hydracrane.jpg" width="270" height="175"/></mat-card-subtitle>
+                </mat-card-header>
+
+                <!-- Main content before expanding -->
+                <mat-card-content>
+                    <p *ngIf="!isHovered4"></p>
+
+                    <!-- Expanded content when hovered -->
+                    <div *ngIf="isHovered4" @fadeAnimation>
+                        <!-- <img mat-card-image [src]="item.image" alt="{{ item.title }}" /> -->
+                        <p>{{ hydracrane.description }}</p>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+        <div class="card-container">
+            <mat-card class="expandable-card" (mouseenter)="isHovered5 = true" (mouseleave)="isHovered5 = false">
+                <mat-card-header>
+                    <mat-card-title class="card-title">{{ combilift.title }}</mat-card-title>
+                    <mat-card-subtitle><img src="assets/images/combiliftmhe.png" width="270" height="175"/></mat-card-subtitle>
+                </mat-card-header>
+
+                <!-- Main content before expanding -->
+                <mat-card-content>
+                    <p *ngIf="!isHovered5"></p>
+
+                    <!-- Expanded content when hovered -->
+                    <div *ngIf="isHovered5" @fadeAnimation>
+                        <!-- <img mat-card-image [src]="item.image" alt="{{ item.title }}" /> -->
+                        <p>{{ combilift.description }}</p>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- <div fxLayout="row" style="height: 300px;">
+      <div class="example-card">
+       <app-book-card></app-book-card>
+      </div>
+      <div class="example-card">
+        <app-warehouse></app-warehouse>
+      </div>
+      <div class="example-card">
+        <app-industrialpacking></app-industrialpacking>
+      </div>
+      <div class="example-card">
+        <app-amcservice></app-amcservice>
+      </div>
+      <div class="example-card">
+        <app-forklift></app-forklift>
+      </div>
+      <div>
+      </div>
+    </div> -->
+</div>

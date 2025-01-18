@@ -1,0 +1,98 @@
+.Title {
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #062549;
+}
+
+.mat-divider.mat-divider-vertical {
+    height: 70px;
+    border-right-width: 1px;
+    margin-top: 1%;
+    border-right-color: #d0c5c5;
+}
+.text{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+    line-height: 3;
+    color: #1f1d1f;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.row-layout {
+  display: flex;
+  flex-direction: row; /* Row-wise layout */
+  justify-content: space-around;
+  gap: 20px; /* Spacing between boxes */
+}
+
+.column-layout {
+  display: flex;
+  flex-direction: column; /* Column-wise layout */
+  gap: 10px; /* Reduced spacing for mobile */
+}
+
+/* media query */
+
+@media (max-width: 599px) {
+  .flex
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 959px) {
+  .flex
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+@media (min-width: 960px) {
+  .flex
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+  }
+}
+
+/* animated header titile */
+
+/* Text with animated background */
+.animated-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right bottom, #f4811f, #d59200, #b39e00, #90a71c, #6aac3d, #73a730, #7ca223, #849c15, #b48400, #db621a, #f13350, #eb038d);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textBackgroundAnimation 4s ease infinite;
+  }
+  
+  /* Keyframes for the animated background inside the text */
+  @keyframes textBackgroundAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Additional content */
+  .content {
+    padding: 20px;
+    font-size: 18px;
+  }
+  

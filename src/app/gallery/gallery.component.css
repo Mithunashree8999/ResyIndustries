@@ -1,0 +1,42 @@
+.Title{
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #062549;
+}
+
+/* Title animation */
+
+
+.animated-text {
+    /* padding-left: 3%; */
+    /* margin-top: 5%; */
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right bottom, #f4811f, #d59200, #b39e00, #90a71c, #6aac3d, #73a730, #7ca223, #849c15, #b48400, #db621a, #f13350, #eb038d);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textBackgroundAnimation 4s ease infinite;
+  }
+  
+  /* Keyframes for the animated background inside the text */
+  @keyframes textBackgroundAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Additional content */
+  .content {
+    padding: 20px;
+    font-size: 18px;
+  }
+  

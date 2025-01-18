@@ -1,0 +1,42 @@
+/* styles.css or category-dialog.component.css */
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    background-image: url('/assets/images/rt.png'); /* Path to your image */
+    background-size: cover; /* Cover the entire card */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Fix the background image */
+    padding: 20px; /* Add some padding */
+    border-radius: 8px; /* Optional: rounded corners */
+  }
+  
+  /* mat-card {
+    width: 200px; 
+  } */
+  
+  .close-button {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    color: rgba(0, 0, 0, 0.54); /* Adjust color as needed */
+  }
+
+  mat-card {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the card */
+}
+
+/* Optional: styles for headers and text inside the card */
+mat-card-title {
+    color: #fff; /* White color for title */
+}
+
+mat-card-subtitle {
+    color: #e0e0e0; /* Lighter color for subtitle */
+}
+
+mat-card-content p {
+    color: #e0e0e0; /* Lighter color for paragraph text */
+}

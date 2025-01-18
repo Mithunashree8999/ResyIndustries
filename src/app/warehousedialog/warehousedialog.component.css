@@ -1,0 +1,44 @@
+.close-button {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    color: rgba(0, 0, 0, 0.54); /* Adjust color as needed */
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  mat-dialog-content {
+    max-height: 400px; /* Adjust for your layout */
+    overflow-y: auto; /* Scroll if content is too long */
+
+  }
+  
+  /* manpowerdialog.component.css */
+
+mat-accordion {
+  background-image: url('/assets/images/bg-warehouse.jpg'); /* Path to your background image */
+  background-size: cover; /* Cover the entire accordion */
+  background-position: center; /* Center the image */
+  padding: 100%; /* Optional padding around the accordion */
+  border-radius: 8px; /* Optional: rounded corners */
+  color: white; /* Text color for better contrast */
+}
+
+mat-expansion-panel {
+  background: rgba(255, 255, 255, 0.8); /* Optional: semi-transparent background for panels */
+  border-radius: 5px; /* Rounded corners for panels */
+  margin-bottom: 10px; /* Space between panels */
+}
+
+/* Adjust header styles if needed */
+.mat-expansion-panel-header {
+  background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for header */
+  color: white; /* Text color for header */
+}
+
+.mat-panel-title, .mat-panel-description {
+  color: white; /* Text color for titles and descriptions */
+}

@@ -1,0 +1,135 @@
+<div>
+  <div>
+    <mat-toolbar width="100%"
+      style="background-color: rgb(255 255 255);;height: 10vh;position: fixed;top: 0;left: 0;z-index: 2;">
+      <div style="width: 30%;" fxLayout="row">
+
+        <img src="assets/images/Resy_logo.png" width="50" height="50" style="margin-top: 5px;" />
+
+        <p class="animated-text">RESY INDUSTRIES</p>
+
+
+
+
+      </div>
+
+      <span class="example-spacer"></span>
+      <!-- Desktop Menu -->
+
+      <div fxLayout="row" fxLayoutGap="15px" class="menu-items" fxHide.lt-md>
+        <div class="example-button-row">
+          <button class="button" (click)="goToHome()" mat-button>Home</button>
+        </div>
+        <div class="example-button-row">
+          <button class="button" (click)="goToServices()" mat-button>Services</button>
+        </div>
+        <div class="example-button-row">
+          <button class="button" (click)="goToMHE()" mat-button>MHE</button>
+        </div>
+        <div class="example-button-row">
+          <button class="button" (click)="goToAbout()" mat-button>About Us</button>
+        </div>
+        <div class="example-button-row">
+          <button class="button" (click)="goToGallery()" mat-button>Gallery</button>
+        </div>
+        <div class="example-button-row">
+          <button class="button" (click)="goToContact()" mat-button>Contact Us</button>
+        </div>
+
+      </div>
+
+
+
+
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" (click)="toggleMenu()" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+      </button>
+
+
+      <!-- Mobile Dropdown Menu -->
+      <div class="mobile-menu" *ngIf="isMenuOpen" fxHide.gt-sm>
+        <button class="button" (click)="goToHome()" mat-button>Home</button>
+        <button class="button" (click)="goToServices()" mat-button>Services</button>
+        <button class="button" (click)="goToMHE()" mat-button>MHE</button>
+        <button class="button" (click)="goToAbout()" mat-button>About Us</button>
+        <button class="button" (click)="goToGallery()" mat-button>Gallery</button>
+        <button class="button" (click)="goToContact()" mat-button>Contact Us</button>
+      </div>
+    </mat-toolbar>
+  </div>
+  <!-- <div *ngIf="isMobileView; else laptopTemplate" class="mobile-design">
+  
+  
+    <div style="margin-top: 3%;" class="jumping-text"
+      [ngClass]="{'jump': isJumping}">
+      <p class="text">Forklift Rental Service<br> We Repair.<br> We Maintain.<br> We Rentals</p>
+    </div>
+
+  </div> -->
+
+  <div *ngIf="isHandset$ | async">
+    <div class="mobile-design">
+      <div style="margin-top: 3%;" class="jumping-text" [ngClass]="{'jump': isJumping}">
+        <p class="text">Forklift Rental Service<br> We Repair.<br> We Maintain.<br> We Rentals</p>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="isTablet$ | async">
+
+    <div id="Home" fxLayout="row" fxLayoutAlign="space-between" class="homepage-exam">
+      <div fxFlex="row" fxLayoutAlign="center" style="width: 30%;">
+        <div style="margin-top: 5%;" class="image-container"><img src="assets/images/left_doosan.png">
+        </div>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="center center" style="width: 100%;" class="jumping-text"
+        [ngClass]="{'jump': isJumping}">
+        <p class="text">Forklifts Rental Services<br> We Repair. We Maintain. We Rentals</p>
+      </div>
+      <div fxFlex="row" fxLayoutAlign="center" style="width: 30%;">
+        <div style="margin-top: 5%;" class="image-container_right"><img src="assets/images/doosan.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!(isHandset$ | async) && !(isTablet$ | async)">
+
+    <div id="Home" fxLayout="row" fxLayoutAlign="space-between" class="homepage-exam">
+      <div fxFlex="row" fxLayoutAlign="center" style="width: 30%;">
+        <div style="margin-top: 5%;" class="image-container"><img src="assets/images/left_doosan.png">
+        </div>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="center center" style="width: 100%;" class="jumping-text"
+        [ngClass]="{'jump': isJumping}">
+        <p class="text">Forklifts Rental Services<br> We Repair. We Maintain. We Rentals</p>
+      </div>
+      <div fxFlex="row" fxLayoutAlign="center" style="width: 30%;">
+        <div style="margin-top: 5%;" class="image-container_right"><img src="assets/images/doosan.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <ng-template #laptopTemplate>
+    <div id="Home" fxLayout="row" fxLayoutAlign="space-between" class="homepage-exam">
+      <div fxFlex="row" fxLayoutAlign="center" style="width: 30%;">
+        <div style="margin-top: 5%;" class="image-container"><img src="assets/images/left_doosan.png">
+        </div>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="center center" style="width: 100%;" class="jumping-text"
+        [ngClass]="{'jump': isJumping}">
+        <p class="text">Forklifts Rental Services<br> We Repair. We Maintain. We Rentals</p>
+      </div>
+      <div fxFlex="row" fxLayoutAlign="center" style="width: 30%;">
+        <div style="margin-top: 5%;" class="image-container_right"><img src="assets/images/doosan.png">
+        </div>
+      </div>
+    </div>
+  </ng-template> -->
+  <div>
+  </div>

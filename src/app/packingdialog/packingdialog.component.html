@@ -1,0 +1,21 @@
+<!-- category-dialog.component.html -->
+<p mat-dialog-title style="font-size: 22px;">Industrial Packing Materials
+  <button mat-icon-button (click)="onClose()" class="close-button" aria-label="Close">
+    <mat-icon>close</mat-icon>
+  </button>
+</p>
+<mat-dialog-content>
+  <div class="grid-container">
+    <mat-card *ngFor="let category of categories" class="category-card">
+      <mat-card-header>
+        <mat-card-title>{{ category.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ category.explanation }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</mat-dialog-content>
+<!-- <mat-dialog-actions>
+  <button mat-button (click)="onClose()">Close</button>
+</mat-dialog-actions> -->

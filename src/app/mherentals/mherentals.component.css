@@ -1,0 +1,163 @@
+.example-card{
+    width: 99%;
+    height: 98%;
+}
+.cardtitle{
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #062549;
+    justify-content: center;
+}
+.cardsubtitle{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #062549;
+}
+.Title{
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #062549;
+}
+
+.card-title{
+  font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #334c6a;
+}
+
+
+/* media query */
+
+@media (max-width: 599px) {
+  .flex
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 959px) {
+  .flex
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 960px) {
+  .flex
+  {
+    display: flex;
+    flex-direction: row;
+   gap: 20px;
+  }
+}
+
+
+/* example card */
+  
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Center the card vertically */
+    width: 39vh;
+  }
+  
+  
+  .expandable-card {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .expandable-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  mat-card-content {
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #334c6a;
+    line-height: 1.5;
+  }
+  
+  mat-card img {
+    max-width: 100%;
+    margin-top: 10px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  mat-card-content p {
+    margin-top: 10px;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .row-layout {
+    display: flex;
+    flex-direction: row; /* Row-wise layout */
+    gap: 20px; /* Spacing between boxes */
+  }
+  
+  .column-layout {
+    display: flex;
+    flex-direction: column; /* Column-wise layout */
+  }
+  
+  
+  /* example toolbar */
+
+  /* Styling the toolbar */
+.toolbar {
+    background-color: rgb(255 255 255); /* Solid background color for the toolbar */
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Text with animated background */
+  .animated-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right bottom, #f4811f, #d59200, #b39e00, #90a71c, #6aac3d, #73a730, #7ca223, #849c15, #b48400, #db621a, #f13350, #eb038d);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textBackgroundAnimation 4s ease infinite;
+  }
+  
+  /* Keyframes for the animated background inside the text */
+  @keyframes textBackgroundAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Additional content */
+  .content {
+    padding: 20px;
+    font-size: 18px;
+  }
+  
+

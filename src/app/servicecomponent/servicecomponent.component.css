@@ -1,0 +1,169 @@
+.example-card{
+    width: 99%;
+    height: 98%;
+}
+.cardtitle{
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #062549;
+    justify-content: center;
+}
+.cardsubtitle{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #062549;
+}
+.Title{
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #062549;
+}
+.row-layout {
+  display: flex;
+  flex-direction: row; /* Row-wise layout */
+  gap: 20px; /* Spacing between boxes */
+}
+
+.column-layout {
+  display: flex;
+  flex-direction: column; /* Column-wise layout */
+  gap: 55px !important; /* Reduced spacing for mobile */
+  
+}
+
+/* media query */
+
+@media (max-width: 599px) {
+  .flex
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 959px) {
+  .flex
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+  }
+}
+
+@media (min-width: 960px) {
+  .flex
+  {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+/* example card */
+  
+/* Styling the toolbar */
+.toolbar {
+    background-color: rgb(255 255 255); /* Solid background color for the toolbar */
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Text with animated background */
+  .animated-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right bottom, #f4811f, #d59200, #b39e00, #90a71c, #6aac3d, #73a730, #7ca223, #849c15, #b48400, #db621a, #f13350, #eb038d);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textBackgroundAnimation 4s ease infinite;
+  }
+  
+  /* Keyframes for the animated background inside the text */
+  @keyframes textBackgroundAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Additional content */
+  .content {
+    padding: 20px;
+    font-size: 18px;
+  }
+  
+/* header text slide animation */
+
+/* Define the animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Add the animation to the header when the page loads */
+.header-slide {
+  animation: slideInFromLeft 1s ease-out; /* 1 second animation */
+  opacity: 1;
+}
+
+/* Initially hide the header */
+.header-hidden {
+  opacity: 0;
+}
+
+/* Slide-in animation for header */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Initial hidden state */
+.header-hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease-out; /* Fade in opacity */
+}
+
+/* When header is visible, apply the slide-in animation */
+.header-slide {
+  animation: slideInFromLeft 1s ease-out; /* Slide-in animation */
+  opacity: 1; /* Ensure it's fully visible */
+}
+
+
+/* div slider right to left */
+
+
+.sliding-div {
+  position: relative; /* Position relative for the animation */
+  transform: translateX(-100%); /* Start off-screen to the left */
+  opacity: 0; /* Start hidden */
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Control the duration and timing */
+  margin: 20px; /* Add some margin */
+  font-size: 2rem; /* Adjust font size as needed */
+}
+
+.slide-in {
+  transform: translateX(0); /* Slide to the original position */
+  opacity: 1; /* Fade in to visible */
+}

@@ -1,0 +1,28 @@
+<div class="book-container">
+    <div class="book">
+      <div class="book-cover">
+        <mat-card (mouseover)="hover = true" (mouseleave)="hover = false" class="example-card">
+          <mat-card-header>
+            <mat-card-title> <img width="150" height="120"
+                src="assets/images/reliability.png"
+                alt="Manpower supply"></mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p class="cardtitle">Transparent Services</p>
+          </mat-card-content>
+          <div *ngIf="hover" class="hover-button">
+            <button mat-button (click)="openDialog()">See more...</button>
+          </div>
+        </mat-card>
+      </div>
+      <!-- <div class="book-content">
+        <mat-card style="    height: 100%;">
+          <mat-card-content>
+            <ul>
+              <li *ngFor="let item of forklifts">{{ item }}</li>
+            </ul>
+          </mat-card-content>
+        </mat-card>
+      </div> -->
+    </div>
+  </div>

@@ -1,0 +1,23 @@
+<div class="book-container">
+    <div class="book">
+      <div class="book-cover">
+        <mat-card (mouseover)="hover = true" (mouseleave)="hover = false" class="example-card">
+          <mat-card-header>
+            <mat-card-title>    <img width="150" height="120"
+                src="https://media.istockphoto.com/id/1356241982/vector/cargo-warehouse-handling-and-storage-packed-goods.jpg?s=612x612&w=0&k=20&c=8zYb89RIpkql6JCbNBwabHHD5o7iEOSkWTStSrBpmOw="
+                alt="Warehouse"></mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p class="cardtitle">Warehouse</p>
+          </mat-card-content>
+          <div *ngIf="hover" class="hover-button">
+            <button mat-button (click)="openDialog()">See more...</button>
+          </div>
+        </mat-card>
+      </div>
+     
+    </div>
+  </div>
+
+  
+  

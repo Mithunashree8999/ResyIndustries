@@ -1,0 +1,31 @@
+<div class="book-container">
+    <div class="book">
+      <div class="book-cover">
+        <mat-card (mouseover)="hover = true" (mouseleave)="hover = false" class="example-card">
+          <mat-card-header>
+            <mat-card-title>    <img width="150" height="120"
+                src="https://media.istockphoto.com/id/1012679302/vector/pile-of-stacked-goods-cardboard-and-wooden-boxes.jpg?s=612x612&w=0&k=20&c=PhB6Ij5fQq3A1vwJ3_JuZV6ngip7ntEr4HZpZcAp-Iw="
+                alt="Industrial Packing"></mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p class="cardtitle">Industrial Packing</p>
+          </mat-card-content>
+          <div *ngIf="hover" class="hover-button">
+            <button mat-button (click)="openDialog()">See more...</button>
+          </div>
+        </mat-card>
+      </div>
+      <!-- <div class="book-content">
+        <mat-card>
+          <mat-card-content>
+            <ul>
+                <li *ngFor="let item of pack">{{ item }}</li>
+              </ul>
+          </mat-card-content>
+        </mat-card>
+      </div> -->
+    </div>
+  </div>
+
+  
+  

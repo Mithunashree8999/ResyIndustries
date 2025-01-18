@@ -1,0 +1,30 @@
+<p mat-dialog-title style="font-size: 22px;">
+    Warehouse
+    <button mat-icon-button (click)="onClose()" class="close-button" aria-label="Close">
+      <mat-icon>close</mat-icon>
+    </button>
+  </p>
+  <div mat-dialog-content>
+    <mat-accordion>
+      <mat-expansion-panel *ngFor="let category of categories" [expanded]="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{ category.title }}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div *ngFor="let field of category.fields" [@fade]>
+          <mat-card>
+            <mat-card-header>
+            </mat-card-header>
+            <mat-card-content>
+              <p>{{ field.explanation }}</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+  <!-- <div mat-dialog-actions>
+    <button mat-button (click)="onClose()">Close</button>
+  </div> -->
+  

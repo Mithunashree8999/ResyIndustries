@@ -1,0 +1,22 @@
+<div class="book-container">
+    <div class="book">
+      <div class="book-cover">
+        <mat-card (mouseover)="hover = true" (mouseleave)="hover = false" class="example-card">
+          <mat-card-header>
+            <mat-card-title>    <img width="150" height="120"
+                src="https://media.istockphoto.com/id/1459958846/vector/warehouse-employees-storehouse-workers-people-work-in-storage-worker-on-forklift-for-stock.jpg?s=612x612&w=0&k=20&c=W5AbxH8IFKcCEwL8u_JFpFxWU1sjyGTdUfYyiJ02tNc="
+                alt="Manpower supply"></mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p class="cardtitle">Manpower Suppliers</p>
+          </mat-card-content>
+          <div *ngIf="hover" class="hover-button">
+            <button mat-button (click)="openDialog()">See more...</button>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  
+  

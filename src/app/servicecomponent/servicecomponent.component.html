@@ -1,0 +1,30 @@
+<div id="service" fxFlex="column" fxFlexAlign="center" style="margin-top: 5%;">
+  <div [ngClass]="{'header-slide': isHeaderVisible, 'header-hidden': !isHeaderVisible}">
+    <mat-toolbar class="toolbar" style="justify-content: center;background-color: #E6E6FA;">
+      <span class="animated-text">- SERVICES -</span>
+      <!-- <span class="Title">- SERVICES -</span> -->
+    </mat-toolbar>
+  </div>
+  <!-- 'column-layout':isMobileView,'row-layout':!isMobileView -->
+
+  <div #slidingDiv class="sliding-div flex"
+    [ngClass]="{'slide-in': isVisible}">
+    <div class="example-card">
+      <app-bookcard></app-bookcard>
+    </div>
+    <div class="example-card">
+      <app-warehouse></app-warehouse>
+    </div>
+    <div class="example-card">
+      <app-industrialpacking></app-industrialpacking>
+    </div>
+    <div class="example-card">
+      <app-amcservice></app-amcservice>
+    </div>
+    <div class="example-card">
+      <app-forklift></app-forklift>
+    </div>
+    <div>
+    </div>
+  </div>
+</div>

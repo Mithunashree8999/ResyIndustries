@@ -1,0 +1,60 @@
+<!-- <p mat-dialog-title style="font-size: 22px;">Manpower Suppliers
+    <button mat-icon-button (click)="onNoClick()" class="close-button" aria-label="Close">
+        <mat-icon>close</mat-icon>
+      </button>
+    </p> -->
+
+    <p mat-dialog-title style="font-size: 22px;">Manpower Suppliers
+    
+      <button mat-icon-button (click)="onNoClick()" class="close-button" aria-label="Close">
+          <mat-icon>close</mat-icon>
+        </button>
+      </p>
+  <mat-dialog-content>
+    <div class="category-container">
+      <mat-card *ngFor="let category of categories">
+        <mat-card-header>
+          <mat-card-title>{{ category.name }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ category.description }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </mat-dialog-content>
+  
+<!-- <div mat-dialog-content>
+  <div class="card-container">
+    <mat-card class="field-card">
+      <mat-card-header>
+        <mat-card-title>Unskilled</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>HouseKeeping Workers</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="field-card">
+      <mat-card-header>
+        <mat-card-title>Semi-skilled</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="field-card">
+      <mat-card-header>
+        <mat-card-title>Skilled</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Production Manpower Supply</p>
+        <p>Welder Manpower Supply</p>
+        <p>Fitter Manpower Supply</p>
+        <p>Warehouse & Administration Manpower Supply</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div> -->
+<!-- <div mat-dialog-actions class="footer">
+  <button mat-button (click)="onNoClick()">Close</button>
+</div> -->
